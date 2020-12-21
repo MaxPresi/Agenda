@@ -23,7 +23,9 @@ namespace Contatos
         public NovoContato()
         {
             InitializeComponent();
-            
+
+            Owner = Application.Current.MainWindow;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
         }
 
         private void Salvar_Click(object sender, RoutedEventArgs e)

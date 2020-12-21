@@ -24,6 +24,9 @@ namespace Contatos
         {
             InitializeComponent();
 
+            Owner = Application.Current.MainWindow;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
+
             this.contato = contato;
 
             NomeTb.Text = contato.Nome;

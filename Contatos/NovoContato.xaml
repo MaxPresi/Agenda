@@ -5,11 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Contatos"
         mc:Ignorable="d"
-        Title="NovoContato" Height="150" Width="200">
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Title="NovoContato" Height="182" Width="200">
     <Grid>
         <StackPanel Margin="10">
+            <TextBlock Text="Nome:"/>
             <TextBox x:Name="NomeTb" Margin="0,0,0,5"/>
+            <TextBlock Text="E-mail:"/>
             <TextBox x:Name="EmailTb" Margin="0,0,0,5"/>
+            <TextBlock Text="Tel.:"/>
             <TextBox x:Name="TelTb" Margin="0,0,0,5"/>
             <Button Content="Salvar" Click="Salvar_Click"
                     Margin="0,0,0,5"/>
